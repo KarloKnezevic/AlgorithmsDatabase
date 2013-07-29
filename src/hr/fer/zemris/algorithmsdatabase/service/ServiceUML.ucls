@@ -1,0 +1,48 @@
+<class-diagram version="1.0.9" icons="true" automaticImage="JPEG" always-add-relationships="false" 
+  generalizations="true" realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <interface id="1" corner="BOTTOM_RIGHT" language="java" name="hr.fer.zemris.algorithmsdatabase.service.IAppService" 
+    project="AlgorithmsDatabase" 
+    file="/AlgorithmsDatabase/src/hr/fer/zemris/algorithmsdatabase/service/IAppService.java" binary="false">    
+    <position height="-1" width="-1" x="211" y="-31"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="2" corner="BOTTOM_RIGHT" language="java" name="hr.fer.zemris.algorithmsdatabase.service.ServiceFactory" 
+    project="AlgorithmsDatabase" 
+    file="/AlgorithmsDatabase/src/hr/fer/zemris/algorithmsdatabase/service/ServiceFactory.java" binary="false">    
+    <position height="-1" width="-1" x="551" y="216"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="3" corner="BOTTOM_RIGHT" language="java" 
+    name="hr.fer.zemris.algorithmsdatabase.service.impl.AppServiceImpl" project="AlgorithmsDatabase" 
+    file="/AlgorithmsDatabase/src/hr/fer/zemris/algorithmsdatabase/service/impl/AppServiceImpl.java" binary="false">    
+    <position height="962" width="338" x="775" y="-281"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <association id="4">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="5" name="appService"/>      
+      <multiplicity id="6" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="7">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
